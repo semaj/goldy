@@ -332,7 +332,7 @@ static int global_init(const struct instance *gi, global_context *gc) {
   return ret == 0 ? 0 : 1;
 }
 
-#define PACKET_DATA_BUFFER_SIZE 4000
+#define PACKET_DATA_BUFFER_SIZE 64000
 typedef struct packet_data {
   unsigned char payload[PACKET_DATA_BUFFER_SIZE];
   size_t length;
